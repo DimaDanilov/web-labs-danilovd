@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 * {
@@ -19,11 +20,12 @@ a{
     color: white;
     text-decoration: none;
     font-size: 3.5rem;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 a:hover{
     text-decoration: underline;
+    transform: scale(1.2);
 }
 
 .container{
