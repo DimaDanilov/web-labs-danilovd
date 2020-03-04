@@ -1,7 +1,14 @@
+html {
+    font-size: 10px;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 * {
@@ -11,4 +18,31 @@ body {
 a{
     color: white;
     text-decoration: none;
+    font-size: 3.5rem;
+    transition: 1s;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    width: 50%;
+    height: 300px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
