@@ -3,12 +3,17 @@ body{
     padding: 0;
 }
 
+header{
+    height: 100vh;
+}
+
 .header__top{
     width: 100%;
     background-color: black;
     display: flex;
-    height: 70px;
+    height: 10%;
     justify-content: space-between;
+    border-bottom: 1px solid white;
 }
 
 .logo_img{
@@ -28,4 +33,37 @@ body{
     color: white;
     text-decoration: none;
     font-size: large;
+}
+
+.header__bottom{
+    height: 90%;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    display: flex;
+}
+
+.header_title{
+    margin: 0;
+    text-align: center;
+    color: white;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.header_desc{
+    color: white;
+    text-align: center;
+}
+
+.header__bottom_text_block{
+    width: 70%;
+}
+
+.header__bottom_img_block{
+    width: 30%;
+}
+
+.bottom_img{
+    width: 100%;
 }
