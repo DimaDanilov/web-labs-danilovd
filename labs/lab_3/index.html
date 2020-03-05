@@ -6,6 +6,9 @@
     <title>Портал «Солнечная система»</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animate.css">
+    <script type='text/javascript' src='js/d3.v3.min.js'></script>
+    <script type='text/javascript' src='js/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='js/planetaryjs.js'></script>
 </head>
 <body>
     <header>
@@ -24,7 +27,9 @@
                 <p class="header_desc">Приветствуем вас на нашем портале, посвященному космосу. Здесь вы сможете познакомиться с чудесами космоса, нашей звёздной системой и необъятной вселенной.</p>
             </div>
             <div class="header__bottom_img_block">
-                <img src="./img/header.gif" class="bottom_img">
+                <canvas id='rotatingGlobe' width='400' height='400'
+                style='width: 400px; height: 400px; cursor: move;'></canvas>
+                <script type='text/javascript' src='js/yourApp.js'></script>
             </div>
         </div>
     </header>
