@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header__top{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.logo_img{
+    margin-left: 5%;
+}
+
+.menu{
+    margin-right: 5%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.menu__link{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
