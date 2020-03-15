@@ -294,7 +294,6 @@ footer{
 
     .footer_info, .footer_nav, .footer_contacts{
         width: 100%;
-        border: 2px solid red;
     }
 
     .footer_container{
