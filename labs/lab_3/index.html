@@ -6,9 +6,9 @@
     <title>Портал «Солнечная система»</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animate.css">
-    <script type='text/javascript' src='js/d3.v3.min.js'></script>
-    <script type='text/javascript' src='js/topojson.v1.min.js'></script>
-    <script type='text/javascript' src='js/planetaryjs.js'></script>
+    <script type='text/javascript' src='js/earth/d3.v3.min.js'></script>
+    <script type='text/javascript' src='js/earth/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='js/earth/planetaryjs.js'></script>
 </head>
 <body>
     <header>
@@ -39,6 +39,14 @@
             </div>
         </div>
         <div class="header__bottom">
+            <div id="particles-js">
+                <script type='text/javascript' src="js/particles/particles.js"></script>
+                <script type='text/javascript'>
+                    particlesJS.load('particles-js', 'js/particles/particles.json', function() {
+                    console.log('particles.js loaded - callback');
+                    });
+                </script>
+            </div>
             <div class="header__bottom_text_block">
                 <h1 class="header_title animated.slow rubberBand">Солнечная система</h1>
                 <p class="header_desc">Приветствуем вас на нашем портале, посвященному космосу. Здесь вы сможете познакомиться с чудесами космоса, нашей звёздной системой и необъятной вселенной.</p>
@@ -46,7 +54,7 @@
             <div class="header__bottom_img_block">
                 <canvas id='rotatingGlobe' width='400px' height='400px'
                 style='width: 29vw; height: 29vw; cursor: move;  min-width: 200px; min-height: 200px;'></canvas>
-                <script type='text/javascript' src='js/yourApp.js'></script>
+                <script type='text/javascript' src='js/earth/yourApp.js'></script>
             </div>
         </div>
     </header>
