@@ -344,6 +344,10 @@ footer{
     .hamburger-menu{
         display: block;
     }
+
+    .gallery_photo_block{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 650px)
@@ -367,5 +371,15 @@ footer{
 
     .footer_container{
         flex-direction: column;
+    }
+
+    .gallery_photo_block{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .gallery_photo_block{
+        grid-template-columns: 1fr;
     }
 }
