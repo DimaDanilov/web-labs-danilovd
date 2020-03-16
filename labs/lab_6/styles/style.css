@@ -30,6 +30,7 @@ main{
     width: 3%;
     right: 25vw;
     bottom: 46vh;
+    z-index: 3;
 }
 
 .crow_img:hover, .crow_img_2:hover{
@@ -55,6 +56,7 @@ main{
     bottom: 60vh;
     position: absolute;
     animation: birds_move 10s infinite;
+    z-index: 2;
 }
 
 @keyframes birds_move {
@@ -81,4 +83,21 @@ main{
     right: 14vw;
     bottom: 33vh;
     position: absolute;
+    z-index: 2;
+}
+
+.table_name{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    display: inline-block;
+    margin-left: 5%;
+    cursor: pointer;
+    transition: 2s;
+    z-index: 3;
+}
+
+.table_name:active{
+    box-shadow: 0 0 10px black;
+    transform: scale(1.3);
 }
