@@ -86,6 +86,21 @@ main{
     z-index: 2;
 }
 
+.sasuke{
+    width: 15%;
+    right: 14vw;
+    bottom: 0vh;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.sasuke:active{
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+
 .table_name{
     color: white;
     -webkit-text-stroke-width: 1px;
