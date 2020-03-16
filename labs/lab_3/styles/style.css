@@ -111,12 +111,13 @@ header{
 .menu__btn {
     display: flex;
     align-items: center;  
-    position: fixed; 
+    position: absolute; 
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 2; 
-    right: 2%;
+    z-index: 6; 
+    top: 2vw;
+    right: 2vw;
 }
   
 .menu__btn > span,
@@ -146,7 +147,7 @@ header{
     height: 100%;
     margin: 0;
     padding: 80px 0;
-    z-index: 1; 
+    z-index: 5; 
     list-style: none;
     text-align: center;
     position: fixed;
@@ -266,8 +267,6 @@ footer{
 .social_media_link_img{
     width: 70%;
 }
-
-
 
 .gallery_container{
     width: 100%;
