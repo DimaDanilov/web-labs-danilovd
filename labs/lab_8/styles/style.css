@@ -113,6 +113,13 @@ main{
     max-width: 100%;
 }
 
+.info_block:last-child .info_block__img_block{
+    order:1
+} 
+.info_block:last-child .info_block__text_block{
+    order:2
+}
+
 /* footer styles */
 
 .map_block{
