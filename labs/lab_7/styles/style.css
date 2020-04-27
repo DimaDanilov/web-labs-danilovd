@@ -144,6 +144,9 @@ body{
     margin: 10vh auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". first_hotel first_hotel ."
+    "second_hotel third_hotel fourth_hotel fifth_hotel";
 }
 
 .hotel_card{
@@ -198,6 +201,27 @@ body{
     margin: 10vh auto;
     align-items: center;
     justify-content: center;
+}
+
+
+.first_hotel{
+    grid-area: first_hotel;
+}
+
+.second_hotel{
+    grid-area: second_hotel;
+}
+
+.third_hotel{
+    grid-area: third_hotel;
+}
+
+.fourth_hotel{
+    grid-area: fourth_hotel;
+}
+
+.fifth_hotel{
+    grid-area: fifth_hotel;
 }
 
 .gallery_photo{
