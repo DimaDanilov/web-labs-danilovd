@@ -84,6 +84,7 @@ body{
     width: 90%;
     margin: 10vh auto 0;
     display: grid;
+    grid-gap: 2vw 3vh;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -192,9 +193,11 @@ body{
 .gallery_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3vw 4vh;
     width: 90%;
     margin: 10vh auto;
     align-items: center;
+    justify-content: center;
 }
 
 .gallery_photo{
