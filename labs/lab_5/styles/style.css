@@ -372,3 +372,46 @@ footer{
         height: 50vw;
     }
 }
+
+/* media print */
+
+@media print{
+    header{
+        display: none;
+    }
+
+    .sale_cards__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card_img__container{
+        display: none;
+    }
+
+    .sale_card{
+        width: 100%;
+        background-color: white;
+    }
+
+    .footer_container{
+        background-color: white;
+        color: black;
+        border-top: 1px solid black;
+    }
+    
+    .footer_nav{
+        display: none;
+    }
+
+    .footer_contacts{
+        display: none;
+    }
+
+    .footer_info{
+        width: 100%;
+    }
+
+    .footer_info h2{
+        text-align: center;
+    }
+}
