@@ -7,7 +7,7 @@
       justify-content: space-around;
 }
 
-.card {
+.card_container > .card {
   width: 40%;
   background-color: #ff9f0e;
   padding: 2%;
