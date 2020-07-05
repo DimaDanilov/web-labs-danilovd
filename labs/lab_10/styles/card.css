@@ -1,0 +1,17 @@
+.card_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card {
+  width: 40%;
+  background-color: #ff9f0e;
+  padding: 2%;
+  border-radius: 20px;
+  color: white;
+}
+/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,13 @@
+.card_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 40%;
+    background-color: rgb(255, 159, 14);
+    padding: 2%;
+    border-radius: 20px;
+    color: white;
+}

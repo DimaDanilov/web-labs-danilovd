@@ -3,6 +3,8 @@ $buttonBgColor: rgb(7, 139, 25);
 $buttonColor: white;
 $mainBlockWidth: (100%/2.5);
 
+@import './card';
+
 @mixin buttonHover{
     background-color: transparent;
     border-color: $buttonBgColor;
@@ -60,3 +62,10 @@ body{
     width: 100%;
 }
 
+.card_container{
+    @extend .card_container;
+}
+
+.card{
+    @extend .card;
+}
