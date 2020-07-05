@@ -1,13 +1,15 @@
-$textColor: invert(black);
-$buttonBgColor: rgb(7, 139, 25);
-$buttonColor: white;
 $mainBlockWidth: (100%/2.5);
+$colors:(
+    textColor:invert(black),
+    buttonBgColor:rgb(7, 139, 25),
+    buttonColor:white
+);
 
 @import './card';
 
 @mixin buttonHover{
     background-color: transparent;
-    border-color: $buttonBgColor;
+    border-color: map-get($colors,buttonBgColor);
 }
 
 body{
@@ -27,8 +29,8 @@ body{
 
     a{
         display: inline-block;
-        background-color: $buttonBgColor;
-        color: $buttonColor;
+        background-color: map-get($colors,buttonBgColor);
+        color: map-get($colors,buttonColor);
         padding: 2% 5%;
         margin: 5%;
         text-decoration: none;
@@ -43,15 +45,15 @@ body{
 
 
 .main_block__title{
-    color: $textColor;
+    color: map-get($colors,textColor);
 }
 
 .main_block__subtitle{
-    color: $textColor;
+    color: map-get($colors,textColor);
 }
 
 .main_block__description{
-    color: $textColor;
+    color: map-get($colors,textColor);
 }
 
 .img_block{
