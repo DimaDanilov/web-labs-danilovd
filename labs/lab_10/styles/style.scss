@@ -1,10 +1,11 @@
-$textColor: rgb(21, 87, 230);
+$textColor: white;
 $buttonBgColor: rgb(7, 139, 25);
 $buttonColor: white;
-$buttonBgColorHover: rgb(86, 196, 101);
+$mainBlockWidth: (100%/2.5);
 
 @mixin buttonHover{
-    background-color: $buttonBgColorHover;
+    background-color: transparent;
+    border-color: $buttonBgColor;
 }
 
 body{
@@ -12,17 +13,25 @@ body{
     padding: 0;
 }
 
+.main_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(108, 151, 245);
+}
+
 .main_block{
-    width: 100%-20%;
-    margin: 10% auto;
+    width: $mainBlockWidth;
 
     a{
+        display: inline-block;
         background-color: $buttonBgColor;
         color: $buttonColor;
-        padding: 1% 3%;
-        margin: 20px;
+        padding: 2% 5%;
+        margin: 5%;
         text-decoration: none;
         transition: 0.3s;
+        border: 2px solid transparent;
 
         &:hover{
             @include buttonHover();
@@ -41,5 +50,13 @@ body{
 
 .main_block__description{
     color: $textColor;
+}
+
+.img_block{
+    width: $mainBlockWidth;
+}
+
+.img_block__img{
+    width: 100%;
 }
 
