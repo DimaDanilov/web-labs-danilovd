@@ -415,3 +415,21 @@ footer{
         text-align: center;
     }
 }
+
+@page :first {
+    margin: 1cm;
+}
+
+.article_container{ 
+    page-break-before: always;
+    page-break-after: always;
+}
+
+p, h1, h2{
+    page-break-inside: avoid; 
+}
+
+p{
+    widows: 4;
+    orphans: 3;
+}
