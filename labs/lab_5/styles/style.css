@@ -414,22 +414,23 @@ footer{
     .footer_info h2{
         text-align: center;
     }
+
+    p{
+        widows: 4;
+        orphans: 3;
+    }
+
+    .article_container{ 
+        page-break-before: always;
+        page-break-after: always;
+    }
+    
+    p, h1, h2{
+        page-break-inside: avoid; 
+    }
 }
 
 @page :first {
     margin: 1cm;
 }
 
-.article_container{ 
-    page-break-before: always;
-    page-break-after: always;
-}
-
-p, h1, h2{
-    page-break-inside: avoid; 
-}
-
-p{
-    widows: 4;
-    orphans: 3;
-}
